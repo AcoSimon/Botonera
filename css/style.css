@@ -1,0 +1,87 @@
+:root{
+    /* Paletas de colores: */
+    --colorFont: #1e1e1e;
+    --colorBackground: #b2123b;
+    --colorCard: #fff;
+    --colorCardDisable: #cfcbc3;
+    /* Tamaño de letras: */
+    --fontSize: 1.3rem;`
+    --footerSize: 10px;
+}
+/*===================================================*/
+/* Etiquetas: Index                                  */
+/*===================================================*/
+body{
+    text-decoration: none;
+    color: var(--colorFont);
+    font-size: var(--fontSize);
+}
+main{
+    max-height: 95vh;
+}
+a{
+    text-decoration: none;
+    color: var(--colorFont);
+    font-size: var(--fontSize);
+}
+p{
+    font-size: var(--fontSize);
+}
+a:hover{
+    color: var(--colorBackground);
+}
+hr{
+    max-width: 70%;
+    text-align: center;
+}
+/*===================================================*/
+/* Clases: Index                                     */
+/*===================================================*/
+.backgroundIndex{ /* Video de fondo*/
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+}
+.boxCards{  /* Contenedor de cartas */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-height: 99vh;
+    min-height: 97vh;
+}
+.card{ /* Cartas individuales */
+    cursor: pointer;
+    background: var(--colorCard);
+    box-shadow: 0 2px 48px 0 rgb(0 0 0 / 10%);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 1%;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    margin-bottom: 30px;
+    min-width: 190px;
+    min-height: 233px;
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icoImg{  /* Iconos de cartas */
+    max-width: 80px;
+    color: var(--colorBackground);
+}
+.logoImg{
+    max-width: 350px;
+    color: var(--colorBackground);
+}
+.cardDisable{
+    background-color: var(--colorCardDisable) !important;
+}
